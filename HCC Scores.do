@@ -27,6 +27,8 @@ encode state, gen(stateid)
 
 gen log_distinct = log(distinct_beneficiaries__non_lupa)
 
+replace gov = 0 if gov == .
+replace nfp = 0 if nfp ==.
 gen rural_urban = 0 
 replace rural_urban = 1 if urban == 1
 
